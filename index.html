@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zimbuzz Studio</title>
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background: linear-gradient(135deg,#0f0f1f,#1a1a3f);
+  font-family:'Segoe UI', sans-serif;
+  color:#e0f7ff;
+  margin:0;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  box-sizing: border-box; /* 🔥 IMPORTANT */
+  z-index:1000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(15,15,31,0.9);
+  border-bottom:2px solid #00f0ff;
+}
+
+
+.logo{
+  color:#00f0ff;
+  font-size:26px;
+  font-weight:800;
+}
+
+nav a{
+  margin-left:25px;
+  color:#a0e0ff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{color:#00f0ff;}
+
+/* SECTIONS */
+section{
+  padding:120px 60px;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.hero-text h1{
+
+  font-size:52px;
+  background: linear-gradient(90deg, #00f0ff, #7b5cff);
+
+  /* Standard */
+  background-clip: text;
+  color: transparent;
+
+  /* Vendor prefixes */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.hero-text p{color:#a0e0ff;}
+
+.download-btn{
+  padding:16px 36px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00f0ff,#7b5cff);
+  color:#0f0f1f;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.hero-image img{
+  width:520px;
+  border-radius:18px;
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  justify-content:space-between;
+}
+
+.feature{
+  width:30%;
+  background:#1a1a3f;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(0,240,255,0.3);
+}
+
+/* SIMPLE BOX */
+.box{
+  max-width:900px;
+  margin:auto;
+  background:#0f172a;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #00f0ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ZIMBUZZ STUDIO</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#download">Download</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Download Zimbuzz<br>Secure APK</h1>
+    <p>Fast, verified and safe APK for Android users.</p>
+    <a href="uploads/app-debug-1.apk"
+   download
+   class="download-btn"
+   onclick="startDownload()">
+⬇ Download Zimbuzz.apk
+</a>
+
+<script>
+function startDownload(){
+  setTimeout(() => {
+    window.location.href = "thankyou.html";
+  }, 800);
+}
+</script>
+
+
+  </div>
+
+  <div class="hero-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBQE83AdwIV1w-OObW4ZQn5hvJ-WqLxOLmnw&s">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="feature">
+    <h3>🔒 Secure File</h3>
+    <p>APK fully scanned and safe.</p>
+  </div>
+  <div class="feature">
+    <h3>⚡ Fast Download</h3>
+    <p>No ads, no redirects.</p>
+  </div>
+  <div class="feature">
+    <h3>📱 Easy Install</h3>
+    <p>Works on most Android devices.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="box">
+    <h1>About Zimbuzz Studio</h1>
+    <p>
+      We provide secure, fast and verified APK downloads.
+      User safety and simplicity is our priority.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="box">
+    <h1>Our Services</h1>
+    🔐 APK Security Verification<br><br>
+    ⚡ Fast Direct Downloads<br><br>
+    📱 Android Compatibility Support<br><br>
+    🚫 No Ads or Redirects
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="box">
+    <h1>Download Zimbuzz APK</h1>
+    <p>Latest secure version</p>
+    <a href="uploads/app-debug-1.apk"
+   download
+   class="download-btn"
+   onclick="startDownload()">
+⬇ Download Zimbuzz.apk
+</a>
+
+<script>
+function startDownload(){
+  setTimeout(() => {
+    window.location.href = "thankyou.html";
+  }, 800);
+}
+</script>
+
+
+  </div>
+</section>
+
+<footer>
+  © 2026 ZIMBUZZ STUDIO • All rights reserved
+</footer>
+
+</body>
+</html>
